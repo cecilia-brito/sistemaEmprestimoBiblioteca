@@ -179,7 +179,7 @@ namespace sistemaEmprestimoBiblioteca
             this.lbNomeCadastro.AutoSize = true;
             this.lbNomeCadastro.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNomeCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
-            this.lbNomeCadastro.Location = new System.Drawing.Point(33, 30);
+            this.lbNomeCadastro.Location = new System.Drawing.Point(33, 35);
             this.lbNomeCadastro.Name = "lbNomeCadastro";
             this.lbNomeCadastro.Size = new System.Drawing.Size(156, 21);
             this.lbNomeCadastro.TabIndex = 9;
