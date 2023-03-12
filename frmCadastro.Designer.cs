@@ -29,236 +29,250 @@ namespace sistemaEmprestimoBiblioteca
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelCadastro = new System.Windows.Forms.Panel();
+            this.panelLogin = new System.Windows.Forms.Panel();
+            this.txtMatriculaColaboradorCadastro = new System.Windows.Forms.TextBox();
+            this.radBtnColaboradorCadastro = new System.Windows.Forms.RadioButton();
+            this.radBtnLeitorCadastro = new System.Windows.Forms.RadioButton();
+            this.lbTiposUserCadastro = new System.Windows.Forms.Label();
+            this.txtNomeCompletoCadastro = new System.Windows.Forms.TextBox();
+            this.lbNomeCompletoCadastro = new System.Windows.Forms.Label();
             this.lbLoginAquiCadastro = new System.Windows.Forms.Label();
             this.lbOULogin = new System.Windows.Forms.Label();
-            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnCadastroFrmCadastro = new System.Windows.Forms.Button();
             this.lbEmailCadastro = new System.Windows.Forms.Label();
             this.lbSenhaCadastro = new System.Windows.Forms.Label();
-            this.txtSenhaLogin = new System.Windows.Forms.TextBox();
-            this.txtEmailLogin = new System.Windows.Forms.TextBox();
-            this.lbCadastro = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lbNomeCadastro = new System.Windows.Forms.Label();
-            this.lbTipoCadastro = new System.Windows.Forms.Label();
-            this.rdbLeitorCadastro = new System.Windows.Forms.RadioButton();
-            this.rdbColaboradorCadastro = new System.Windows.Forms.RadioButton();
-            this.txtMatriculaCadastro = new System.Windows.Forms.TextBox();
-            this.panelCadastro.SuspendLayout();
+            this.txtSenhaCadastro = new System.Windows.Forms.TextBox();
+            this.txtEmailCadastro = new System.Windows.Forms.TextBox();
+            this.lbCadastroForm = new System.Windows.Forms.Label();
+            this.panelLogin.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelCadastro
+            // panelLogin
             // 
-            this.panelCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(214)))), ((int)(((byte)(196)))));
-            this.panelCadastro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelCadastro.Controls.Add(this.txtMatriculaCadastro);
-            this.panelCadastro.Controls.Add(this.rdbColaboradorCadastro);
-            this.panelCadastro.Controls.Add(this.rdbLeitorCadastro);
-            this.panelCadastro.Controls.Add(this.lbTipoCadastro);
-            this.panelCadastro.Controls.Add(this.lbNomeCadastro);
-            this.panelCadastro.Controls.Add(this.textBox1);
-            this.panelCadastro.Controls.Add(this.lbLoginAquiCadastro);
-            this.panelCadastro.Controls.Add(this.lbOULogin);
-            this.panelCadastro.Controls.Add(this.btnCadastrar);
-            this.panelCadastro.Controls.Add(this.lbEmailCadastro);
-            this.panelCadastro.Controls.Add(this.lbSenhaCadastro);
-            this.panelCadastro.Controls.Add(this.txtSenhaLogin);
-            this.panelCadastro.Controls.Add(this.txtEmailLogin);
-            this.panelCadastro.Controls.Add(this.lbCadastro);
-            this.panelCadastro.Location = new System.Drawing.Point(210, 12);
-            this.panelCadastro.Name = "panelCadastro";
-            this.panelCadastro.Size = new System.Drawing.Size(375, 361);
-            this.panelCadastro.TabIndex = 1;
+            this.panelLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(214)))), ((int)(((byte)(196)))));
+            this.panelLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelLogin.Controls.Add(this.txtMatriculaColaboradorCadastro);
+            this.panelLogin.Controls.Add(this.radBtnColaboradorCadastro);
+            this.panelLogin.Controls.Add(this.radBtnLeitorCadastro);
+            this.panelLogin.Controls.Add(this.lbTiposUserCadastro);
+            this.panelLogin.Controls.Add(this.txtNomeCompletoCadastro);
+            this.panelLogin.Controls.Add(this.lbNomeCompletoCadastro);
+            this.panelLogin.Controls.Add(this.lbLoginAquiCadastro);
+            this.panelLogin.Controls.Add(this.lbOULogin);
+            this.panelLogin.Controls.Add(this.btnCadastroFrmCadastro);
+            this.panelLogin.Controls.Add(this.lbEmailCadastro);
+            this.panelLogin.Controls.Add(this.lbSenhaCadastro);
+            this.panelLogin.Controls.Add(this.txtSenhaCadastro);
+            this.panelLogin.Controls.Add(this.txtEmailCadastro);
+            this.panelLogin.Controls.Add(this.lbCadastroForm);
+            this.panelLogin.Location = new System.Drawing.Point(308, 50);
+            this.panelLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.panelLogin.Name = "panelLogin";
+            this.panelLogin.Size = new System.Drawing.Size(562, 479);
+            this.panelLogin.TabIndex = 1;
+            this.panelLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogin_Paint);
+            // 
+            // txtMatriculaColaboradorCadastro
+            // 
+            this.txtMatriculaColaboradorCadastro.Location = new System.Drawing.Point(351, 331);
+            this.txtMatriculaColaboradorCadastro.Name = "txtMatriculaColaboradorCadastro";
+            this.txtMatriculaColaboradorCadastro.Size = new System.Drawing.Size(157, 26);
+            this.txtMatriculaColaboradorCadastro.TabIndex = 13;
+            this.txtMatriculaColaboradorCadastro.Text = "Matrícula";
+            // 
+            // radBtnColaboradorCadastro
+            // 
+            this.radBtnColaboradorCadastro.AutoSize = true;
+            this.radBtnColaboradorCadastro.Location = new System.Drawing.Point(182, 333);
+            this.radBtnColaboradorCadastro.Name = "radBtnColaboradorCadastro";
+            this.radBtnColaboradorCadastro.Size = new System.Drawing.Size(118, 24);
+            this.radBtnColaboradorCadastro.TabIndex = 12;
+            this.radBtnColaboradorCadastro.TabStop = true;
+            this.radBtnColaboradorCadastro.Text = "colaborador";
+            this.radBtnColaboradorCadastro.UseVisualStyleBackColor = true;
+            // 
+            // radBtnLeitorCadastro
+            // 
+            this.radBtnLeitorCadastro.AutoSize = true;
+            this.radBtnLeitorCadastro.Location = new System.Drawing.Point(55, 333);
+            this.radBtnLeitorCadastro.Name = "radBtnLeitorCadastro";
+            this.radBtnLeitorCadastro.Size = new System.Drawing.Size(68, 24);
+            this.radBtnLeitorCadastro.TabIndex = 11;
+            this.radBtnLeitorCadastro.TabStop = true;
+            this.radBtnLeitorCadastro.Text = "leitor";
+            this.radBtnLeitorCadastro.UseVisualStyleBackColor = true;
+            // 
+            // lbTiposUserCadastro
+            // 
+            this.lbTiposUserCadastro.AutoSize = true;
+            this.lbTiposUserCadastro.Font = new System.Drawing.Font("Gadugi", 10.25F, System.Drawing.FontStyle.Bold);
+            this.lbTiposUserCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
+            this.lbTiposUserCadastro.Location = new System.Drawing.Point(50, 301);
+            this.lbTiposUserCadastro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTiposUserCadastro.Name = "lbTiposUserCadastro";
+            this.lbTiposUserCadastro.Size = new System.Drawing.Size(174, 25);
+            this.lbTiposUserCadastro.TabIndex = 10;
+            this.lbTiposUserCadastro.Text = "Tipos de usuário";
+            // 
+            // txtNomeCompletoCadastro
+            // 
+            this.txtNomeCompletoCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(85)))), ((int)(((byte)(57)))));
+            this.txtNomeCompletoCadastro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNomeCompletoCadastro.Font = new System.Drawing.Font("Gadugi", 12.25F, System.Drawing.FontStyle.Bold);
+            this.txtNomeCompletoCadastro.ForeColor = System.Drawing.Color.Transparent;
+            this.txtNomeCompletoCadastro.Location = new System.Drawing.Point(55, 110);
+            this.txtNomeCompletoCadastro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNomeCompletoCadastro.Name = "txtNomeCompletoCadastro";
+            this.txtNomeCompletoCadastro.Size = new System.Drawing.Size(453, 33);
+            this.txtNomeCompletoCadastro.TabIndex = 9;
+            this.txtNomeCompletoCadastro.Text = "email@dominio.com";
+            // 
+            // lbNomeCompletoCadastro
+            // 
+            this.lbNomeCompletoCadastro.AutoSize = true;
+            this.lbNomeCompletoCadastro.Font = new System.Drawing.Font("Gadugi", 12.25F, System.Drawing.FontStyle.Bold);
+            this.lbNomeCompletoCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
+            this.lbNomeCompletoCadastro.Location = new System.Drawing.Point(46, 72);
+            this.lbNomeCompletoCadastro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNomeCompletoCadastro.Name = "lbNomeCompletoCadastro";
+            this.lbNomeCompletoCadastro.Size = new System.Drawing.Size(204, 30);
+            this.lbNomeCompletoCadastro.TabIndex = 8;
+            this.lbNomeCompletoCadastro.Text = "Nome completo";
             // 
             // lbLoginAquiCadastro
             // 
             this.lbLoginAquiCadastro.AutoSize = true;
             this.lbLoginAquiCadastro.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLoginAquiCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
-            this.lbLoginAquiCadastro.Location = new System.Drawing.Point(115, 332);
+            this.lbLoginAquiCadastro.Location = new System.Drawing.Point(172, 446);
+            this.lbLoginAquiCadastro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbLoginAquiCadastro.Name = "lbLoginAquiCadastro";
-            this.lbLoginAquiCadastro.Size = new System.Drawing.Size(132, 14);
+            this.lbLoginAquiCadastro.Size = new System.Drawing.Size(192, 20);
             this.lbLoginAquiCadastro.TabIndex = 7;
             this.lbLoginAquiCadastro.Text = "Faça login clicando aqui";
+            this.lbLoginAquiCadastro.Click += new System.EventHandler(this.lbLoginAquiCadastro_Click_1);
             // 
             // lbOULogin
             // 
             this.lbOULogin.AutoSize = true;
             this.lbOULogin.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbOULogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
-            this.lbOULogin.Location = new System.Drawing.Point(168, 318);
+            this.lbOULogin.Location = new System.Drawing.Point(256, 422);
+            this.lbOULogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbOULogin.Name = "lbOULogin";
-            this.lbOULogin.Size = new System.Drawing.Size(21, 14);
+            this.lbOULogin.Size = new System.Drawing.Size(29, 20);
             this.lbOULogin.TabIndex = 6;
             this.lbOULogin.Text = "ou";
             // 
-            // btnCadastrar
+            // btnCadastroFrmCadastro
             // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(46)))), ((int)(((byte)(31)))));
-            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(224)))), ((int)(((byte)(212)))));
-            this.btnCadastrar.Location = new System.Drawing.Point(37, 279);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(302, 36);
-            this.btnCadastrar.TabIndex = 5;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastroFrmCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(46)))), ((int)(((byte)(31)))));
+            this.btnCadastroFrmCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastroFrmCadastro.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastroFrmCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(224)))), ((int)(((byte)(212)))));
+            this.btnCadastroFrmCadastro.Location = new System.Drawing.Point(55, 364);
+            this.btnCadastroFrmCadastro.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCadastroFrmCadastro.Name = "btnCadastroFrmCadastro";
+            this.btnCadastroFrmCadastro.Size = new System.Drawing.Size(453, 54);
+            this.btnCadastroFrmCadastro.TabIndex = 5;
+            this.btnCadastroFrmCadastro.Text = "Cadastrar";
+            this.btnCadastroFrmCadastro.UseVisualStyleBackColor = false;
             // 
             // lbEmailCadastro
             // 
             this.lbEmailCadastro.AutoSize = true;
-            this.lbEmailCadastro.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmailCadastro.Font = new System.Drawing.Font("Gadugi", 12.25F, System.Drawing.FontStyle.Bold);
             this.lbEmailCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
-            this.lbEmailCadastro.Location = new System.Drawing.Point(33, 107);
+            this.lbEmailCadastro.Location = new System.Drawing.Point(49, 150);
+            this.lbEmailCadastro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEmailCadastro.Name = "lbEmailCadastro";
-            this.lbEmailCadastro.Size = new System.Drawing.Size(65, 21);
+            this.lbEmailCadastro.Size = new System.Drawing.Size(86, 30);
             this.lbEmailCadastro.TabIndex = 4;
             this.lbEmailCadastro.Text = "E-mail";
             // 
             // lbSenhaCadastro
             // 
             this.lbSenhaCadastro.AutoSize = true;
-            this.lbSenhaCadastro.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSenhaCadastro.Font = new System.Drawing.Font("Gadugi", 12.25F, System.Drawing.FontStyle.Bold);
             this.lbSenhaCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
-            this.lbSenhaCadastro.Location = new System.Drawing.Point(33, 169);
+            this.lbSenhaCadastro.Location = new System.Drawing.Point(49, 223);
+            this.lbSenhaCadastro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSenhaCadastro.Name = "lbSenhaCadastro";
-            this.lbSenhaCadastro.Size = new System.Drawing.Size(64, 21);
+            this.lbSenhaCadastro.Size = new System.Drawing.Size(84, 30);
             this.lbSenhaCadastro.TabIndex = 3;
             this.lbSenhaCadastro.Text = "Senha";
             // 
-            // txtSenhaLogin
+            // txtSenhaCadastro
             // 
-            this.txtSenhaLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(85)))), ((int)(((byte)(57)))));
-            this.txtSenhaLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSenhaLogin.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold);
-            this.txtSenhaLogin.ForeColor = System.Drawing.Color.Transparent;
-            this.txtSenhaLogin.Location = new System.Drawing.Point(35, 196);
-            this.txtSenhaLogin.Name = "txtSenhaLogin";
-            this.txtSenhaLogin.Size = new System.Drawing.Size(302, 26);
-            this.txtSenhaLogin.TabIndex = 2;
-            this.txtSenhaLogin.Text = "•••••••••••••";
+            this.txtSenhaCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(85)))), ((int)(((byte)(57)))));
+            this.txtSenhaCadastro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSenhaCadastro.Font = new System.Drawing.Font("Gadugi", 12.25F, System.Drawing.FontStyle.Bold);
+            this.txtSenhaCadastro.ForeColor = System.Drawing.Color.Transparent;
+            this.txtSenhaCadastro.Location = new System.Drawing.Point(55, 255);
+            this.txtSenhaCadastro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSenhaCadastro.Name = "txtSenhaCadastro";
+            this.txtSenhaCadastro.Size = new System.Drawing.Size(453, 33);
+            this.txtSenhaCadastro.TabIndex = 2;
+            this.txtSenhaCadastro.Text = "•••••••••••••";
             // 
-            // txtEmailLogin
+            // txtEmailCadastro
             // 
-            this.txtEmailLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(85)))), ((int)(((byte)(57)))));
-            this.txtEmailLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmailLogin.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold);
-            this.txtEmailLogin.ForeColor = System.Drawing.Color.Transparent;
-            this.txtEmailLogin.Location = new System.Drawing.Point(37, 131);
-            this.txtEmailLogin.Name = "txtEmailLogin";
-            this.txtEmailLogin.Size = new System.Drawing.Size(302, 26);
-            this.txtEmailLogin.TabIndex = 1;
-            this.txtEmailLogin.Text = "email@dominio.com";
+            this.txtEmailCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(85)))), ((int)(((byte)(57)))));
+            this.txtEmailCadastro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmailCadastro.Font = new System.Drawing.Font("Gadugi", 12.25F, System.Drawing.FontStyle.Bold);
+            this.txtEmailCadastro.ForeColor = System.Drawing.Color.Transparent;
+            this.txtEmailCadastro.Location = new System.Drawing.Point(55, 185);
+            this.txtEmailCadastro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmailCadastro.Name = "txtEmailCadastro";
+            this.txtEmailCadastro.Size = new System.Drawing.Size(453, 33);
+            this.txtEmailCadastro.TabIndex = 1;
+            this.txtEmailCadastro.Text = "email@dominio.com";
             // 
-            // lbCadastro
+            // lbCadastroForm
             // 
-            this.lbCadastro.AutoSize = true;
-            this.lbCadastro.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
-            this.lbCadastro.Location = new System.Drawing.Point(149, 9);
-            this.lbCadastro.Name = "lbCadastro";
-            this.lbCadastro.Size = new System.Drawing.Size(89, 21);
-            this.lbCadastro.TabIndex = 0;
-            this.lbCadastro.Text = "Cadastro";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(85)))), ((int)(((byte)(57)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold);
-            this.textBox1.ForeColor = System.Drawing.Color.Transparent;
-            this.textBox1.Location = new System.Drawing.Point(35, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(302, 26);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "email@dominio.com";
-            // 
-            // lbNomeCadastro
-            // 
-            this.lbNomeCadastro.AutoSize = true;
-            this.lbNomeCadastro.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNomeCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
-            this.lbNomeCadastro.Location = new System.Drawing.Point(33, 35);
-            this.lbNomeCadastro.Name = "lbNomeCadastro";
-            this.lbNomeCadastro.Size = new System.Drawing.Size(156, 21);
-            this.lbNomeCadastro.TabIndex = 9;
-            this.lbNomeCadastro.Text = "Nome Completo";
-            // 
-            // lbTipoCadastro
-            // 
-            this.lbTipoCadastro.AutoSize = true;
-            this.lbTipoCadastro.Font = new System.Drawing.Font("Gadugi", 10.25F, System.Drawing.FontStyle.Bold);
-            this.lbTipoCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
-            this.lbTipoCadastro.Location = new System.Drawing.Point(34, 235);
-            this.lbTipoCadastro.Name = "lbTipoCadastro";
-            this.lbTipoCadastro.Size = new System.Drawing.Size(114, 18);
-            this.lbTipoCadastro.TabIndex = 10;
-            this.lbTipoCadastro.Text = "Tipo de Usuário";
-            // 
-            // rdbLeitorCadastro
-            // 
-            this.rdbLeitorCadastro.AutoSize = true;
-            this.rdbLeitorCadastro.Location = new System.Drawing.Point(37, 256);
-            this.rdbLeitorCadastro.Name = "rdbLeitorCadastro";
-            this.rdbLeitorCadastro.Size = new System.Drawing.Size(51, 17);
-            this.rdbLeitorCadastro.TabIndex = 11;
-            this.rdbLeitorCadastro.TabStop = true;
-            this.rdbLeitorCadastro.Text = "Leitor";
-            this.rdbLeitorCadastro.UseVisualStyleBackColor = true;
-            // 
-            // rdbColaboradorCadastro
-            // 
-            this.rdbColaboradorCadastro.AutoSize = true;
-            this.rdbColaboradorCadastro.Location = new System.Drawing.Point(140, 256);
-            this.rdbColaboradorCadastro.Name = "rdbColaboradorCadastro";
-            this.rdbColaboradorCadastro.Size = new System.Drawing.Size(82, 17);
-            this.rdbColaboradorCadastro.TabIndex = 12;
-            this.rdbColaboradorCadastro.TabStop = true;
-            this.rdbColaboradorCadastro.Text = "Colaborador";
-            this.rdbColaboradorCadastro.UseVisualStyleBackColor = true;
-            // 
-            // txtMatriculaCadastro
-            // 
-            this.txtMatriculaCadastro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatriculaCadastro.Location = new System.Drawing.Point(239, 258);
-            this.txtMatriculaCadastro.Name = "txtMatriculaCadastro";
-            this.txtMatriculaCadastro.Size = new System.Drawing.Size(98, 13);
-            this.txtMatriculaCadastro.TabIndex = 13;
-            this.txtMatriculaCadastro.Text = "Matrícula";
+            this.lbCadastroForm.AutoSize = true;
+            this.lbCadastroForm.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCadastroForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(65)))), ((int)(((byte)(43)))));
+            this.lbCadastroForm.Location = new System.Drawing.Point(225, 27);
+            this.lbCadastroForm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCadastroForm.Name = "lbCadastroForm";
+            this.lbCadastroForm.Size = new System.Drawing.Size(137, 35);
+            this.lbCadastroForm.TabIndex = 0;
+            this.lbCadastroForm.Text = "Cadastro";
             // 
             // frmCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(224)))), ((int)(((byte)(212)))));
-            this.ClientSize = new System.Drawing.Size(785, 385);
-            this.Controls.Add(this.panelCadastro);
+            this.ClientSize = new System.Drawing.Size(1178, 577);
+            this.Controls.Add(this.panelLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCadastro";
             this.Text = "frmCadastro";
-            this.panelCadastro.ResumeLayout(false);
-            this.panelCadastro.PerformLayout();
+            this.panelLogin.ResumeLayout(false);
+            this.panelLogin.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelCadastro;
+        private System.Windows.Forms.Panel panelLogin;
+        private System.Windows.Forms.TextBox txtMatriculaColaboradorCadastro;
+        private System.Windows.Forms.RadioButton radBtnColaboradorCadastro;
+        private System.Windows.Forms.RadioButton radBtnLeitorCadastro;
+        private System.Windows.Forms.Label lbTiposUserCadastro;
+        private System.Windows.Forms.TextBox txtNomeCompletoCadastro;
+        private System.Windows.Forms.Label lbNomeCompletoCadastro;
         private System.Windows.Forms.Label lbLoginAquiCadastro;
         private System.Windows.Forms.Label lbOULogin;
-        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button btnCadastroFrmCadastro;
         private System.Windows.Forms.Label lbEmailCadastro;
         private System.Windows.Forms.Label lbSenhaCadastro;
-        private System.Windows.Forms.TextBox txtSenhaLogin;
-        private System.Windows.Forms.TextBox txtEmailLogin;
-        private System.Windows.Forms.Label lbCadastro;
-        private System.Windows.Forms.TextBox txtMatriculaCadastro;
-        private System.Windows.Forms.RadioButton rdbColaboradorCadastro;
-        private System.Windows.Forms.RadioButton rdbLeitorCadastro;
-        private System.Windows.Forms.Label lbTipoCadastro;
-        private System.Windows.Forms.Label lbNomeCadastro;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSenhaCadastro;
+        private System.Windows.Forms.TextBox txtEmailCadastro;
+        private System.Windows.Forms.Label lbCadastroForm;
     }
 }

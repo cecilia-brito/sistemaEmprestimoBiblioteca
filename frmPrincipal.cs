@@ -47,16 +47,23 @@ namespace sistemaEmprestimoBiblioteca
         private void pictureBoxLogo_Click(object sender, EventArgs e)
         {
             FormClose();
+            ShowForm(new frmConteudoPrincipal());
+            btnLogin.BackColor = Color.FromArgb(127, 85, 57);
+            btnAcervo.BackColor = Color.FromArgb(127, 85, 57);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             ShowForm(new frmLogin(panelForm));
+            btnAcervo.BackColor = Color.FromArgb(127, 85, 57);
+            btnLogin.BackColor = Color.FromArgb(68,46,31);
         }
 
         private void btnAcervo_Click(object sender, EventArgs e)
         {
             ShowForm(new frmAcervo());
+            btnLogin.BackColor = Color.FromArgb(127, 85, 57);
+            btnAcervo.BackColor = Color.FromArgb(68, 46, 31);
         }
     }
 }

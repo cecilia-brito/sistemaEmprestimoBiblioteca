@@ -15,6 +15,7 @@ namespace sistemaEmprestimoBiblioteca
 
         private Form frmAtivo;
         private Panel panelForm;
+
         public frmLogin(Panel panel)
         {
             InitializeComponent();
@@ -44,7 +45,12 @@ namespace sistemaEmprestimoBiblioteca
         private void lbCadastreAquiLogin_Click(object sender, EventArgs e)
         {
             FormClose();
-            ShowForm(new frmCadastro());
+            ShowForm(new frmCadastro(panelForm));
+        }
+
+        private void txtEmailLogin_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

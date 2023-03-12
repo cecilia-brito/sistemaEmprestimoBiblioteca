@@ -44,18 +44,18 @@ namespace sistemaEmprestimoBiblioteca
             this.lbAcervo.AutoSize = true;
             this.lbAcervo.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.lbAcervo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(85)))), ((int)(((byte)(57)))));
-            this.lbAcervo.Location = new System.Drawing.Point(26, 22);
-            this.lbAcervo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbAcervo.Location = new System.Drawing.Point(39, 33);
             this.lbAcervo.Name = "lbAcervo";
-            this.lbAcervo.Size = new System.Drawing.Size(72, 21);
+            this.lbAcervo.Size = new System.Drawing.Size(106, 34);
             this.lbAcervo.TabIndex = 4;
             this.lbAcervo.Text = "Acervo";
             // 
             // pictureCapaAcervo
             // 
-            this.pictureCapaAcervo.Location = new System.Drawing.Point(30, 71);
+            this.pictureCapaAcervo.Location = new System.Drawing.Point(45, 106);
+            this.pictureCapaAcervo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureCapaAcervo.Name = "pictureCapaAcervo";
-            this.pictureCapaAcervo.Size = new System.Drawing.Size(68, 91);
+            this.pictureCapaAcervo.Size = new System.Drawing.Size(102, 136);
             this.pictureCapaAcervo.TabIndex = 5;
             this.pictureCapaAcervo.TabStop = false;
             // 
@@ -63,9 +63,10 @@ namespace sistemaEmprestimoBiblioteca
             // 
             this.lbTituloLivroAcervo.AutoSize = true;
             this.lbTituloLivroAcervo.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.lbTituloLivroAcervo.Location = new System.Drawing.Point(130, 71);
+            this.lbTituloLivroAcervo.Location = new System.Drawing.Point(195, 106);
+            this.lbTituloLivroAcervo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTituloLivroAcervo.Name = "lbTituloLivroAcervo";
-            this.lbTituloLivroAcervo.Size = new System.Drawing.Size(42, 17);
+            this.lbTituloLivroAcervo.Size = new System.Drawing.Size(60, 24);
             this.lbTituloLivroAcervo.TabIndex = 6;
             this.lbTituloLivroAcervo.Text = "Título";
             // 
@@ -73,9 +74,10 @@ namespace sistemaEmprestimoBiblioteca
             // 
             this.lbISBNAcervo.AutoSize = true;
             this.lbISBNAcervo.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.lbISBNAcervo.Location = new System.Drawing.Point(190, 71);
+            this.lbISBNAcervo.Location = new System.Drawing.Point(285, 106);
+            this.lbISBNAcervo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbISBNAcervo.Name = "lbISBNAcervo";
-            this.lbISBNAcervo.Size = new System.Drawing.Size(37, 17);
+            this.lbISBNAcervo.Size = new System.Drawing.Size(52, 24);
             this.lbISBNAcervo.TabIndex = 7;
             this.lbISBNAcervo.Text = "ISBN";
             // 
@@ -83,9 +85,10 @@ namespace sistemaEmprestimoBiblioteca
             // 
             this.lbSinopse.AutoSize = true;
             this.lbSinopse.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.lbSinopse.Location = new System.Drawing.Point(130, 109);
+            this.lbSinopse.Location = new System.Drawing.Point(195, 164);
+            this.lbSinopse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSinopse.Name = "lbSinopse";
-            this.lbSinopse.Size = new System.Drawing.Size(58, 17);
+            this.lbSinopse.Size = new System.Drawing.Size(83, 24);
             this.lbSinopse.TabIndex = 8;
             this.lbSinopse.Text = "Sinopse:";
             // 
@@ -93,9 +96,10 @@ namespace sistemaEmprestimoBiblioteca
             // 
             this.lbQtdAcervo.AutoSize = true;
             this.lbQtdAcervo.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.lbQtdAcervo.Location = new System.Drawing.Point(130, 145);
+            this.lbQtdAcervo.Location = new System.Drawing.Point(195, 218);
+            this.lbQtdAcervo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbQtdAcervo.Name = "lbQtdAcervo";
-            this.lbQtdAcervo.Size = new System.Drawing.Size(39, 17);
+            this.lbQtdAcervo.Size = new System.Drawing.Size(53, 24);
             this.lbQtdAcervo.TabIndex = 9;
             this.lbQtdAcervo.Text = "QTD:";
             // 
@@ -104,19 +108,20 @@ namespace sistemaEmprestimoBiblioteca
             this.btnEmprestar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(85)))), ((int)(((byte)(57)))));
             this.btnEmprestar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmprestar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(224)))), ((int)(((byte)(212)))));
-            this.btnEmprestar.Location = new System.Drawing.Point(229, 129);
+            this.btnEmprestar.Location = new System.Drawing.Point(344, 194);
+            this.btnEmprestar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEmprestar.Name = "btnEmprestar";
-            this.btnEmprestar.Size = new System.Drawing.Size(99, 33);
+            this.btnEmprestar.Size = new System.Drawing.Size(148, 50);
             this.btnEmprestar.TabIndex = 10;
             this.btnEmprestar.Text = "Emprestar";
             this.btnEmprestar.UseVisualStyleBackColor = false;
             // 
             // frmAcervo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(224)))), ((int)(((byte)(212)))));
-            this.ClientSize = new System.Drawing.Size(785, 385);
+            this.ClientSize = new System.Drawing.Size(1178, 577);
             this.Controls.Add(this.btnEmprestar);
             this.Controls.Add(this.lbQtdAcervo);
             this.Controls.Add(this.lbSinopse);
@@ -126,6 +131,7 @@ namespace sistemaEmprestimoBiblioteca
             this.Controls.Add(this.lbAcervo);
             this.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAcervo";
             this.Text = "frmAcervo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureCapaAcervo)).EndInit();
